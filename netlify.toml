@@ -1,0 +1,7 @@
+[build]
+  command = "unzip -o retiro-netlify-fonte.zip -x netlify.toml && npm install --no-audit --no-fund && npm test"
+  publish = "central-netlify"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "24"
